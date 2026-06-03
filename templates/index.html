@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Recommendation System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>🤖 AI Recommendation System</h1>
+            </div>
+            <div class="nav-links">
+                <a href="/" class="nav-link active">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#about" class="nav-link">About</a>
+            </div>
+            <button class="theme-toggle" id="themeToggle">🌙 Dark Mode</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Discover Your Perfect Learning Path</h1>
+                <p class="hero-subtitle">Personalized recommendations based on your preferences and expertise level</p>
+                <a href="/recommend" class="cta-button">Get Started</a>
+            </div>
+            <div class="hero-illustration">
+                <div class="floating-card">
+                    <span class="emoji">🚀</span>
+                </div>
+                <div class="floating-card">
+                    <span class="emoji">💡</span>
+                </div>
+                <div class="floating-card">
+                    <span class="emoji">🎯</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Recommendation Systems</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>What is a Recommendation System?</h3>
+                    <p>A recommendation system is an intelligent algorithm that analyzes user preferences and behavior to suggest relevant items, services, or learning paths tailored to individual needs.</p>
+                </div>
+                <div class="about-card">
+                    <h3>How It Works</h3>
+                    <p>Our system uses preference-based algorithms that consider your category interest, experience level, and preferred learning style to curate personalized recommendations from a comprehensive knowledge base.</p>
+                </div>
+                <div class="about-card">
+                    <h3>Why Personalization Matters</h3>
+                    <p>One-size-fits-all solutions don't work for learning. Our AI considers your unique profile to deliver recommendations that match your goals, pace, and learning preferences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2>Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Preference Analysis</h3>
+                    <p>Smart analysis of your interests to provide accurate recommendations</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>Learning Roadmaps</h3>
+                    <p>Structured pathways with difficulty progression from beginner to master</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎓</div>
+                    <h3>Multiple Formats</h3>
+                    <p>Video courses, articles, projects, and certifications for diverse learning styles</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⭐</div>
+                    <h3>Personalized Score</h3>
+                    <p>Get a recommendation score based on the relevance to your profile</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Easy to Restart</h3>
+                    <p>Quickly adjust preferences and explore different recommendations</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💾</div>
+                    <h3>Save & Export</h3>
+                    <p>Save your recommendations for future reference and planning</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stat-item">
+                <h4>8+</h4>
+                <p>Categories</p>
+            </div>
+            <div class="stat-item">
+                <h4>3</h4>
+                <p>Experience Levels</p>
+            </div>
+            <div class="stat-item">
+                <h4>4</h4>
+                <p>Learning Styles</p>
+            </div>
+            <div class="stat-item">
+                <h4>200+</h4>
+                <p>Recommendations</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Start Your Learning Journey?</h2>
+            <p>Choose your preferences and get personalized recommendations tailored just for you</p>
+            <a href="/recommend" class="cta-button">Get Recommendations Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 AI Recommendation System. All rights reserved.</p>
+            <p>Department of Computer Science and Engineering</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

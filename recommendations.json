@@ -1,0 +1,738 @@
+{
+  "Technology": {
+    "Beginner": {
+      "Video Courses": [
+        "Python Basics",
+        "HTML & CSS Fundamentals",
+        "Git & GitHub Essentials",
+        "JavaScript Introduction",
+        "Web Development Basics"
+      ],
+      "Articles": [
+        "History of Computing",
+        "Introduction to Programming",
+        "Understanding Algorithms",
+        "Web Protocols Explained",
+        "Tech Industry Overview"
+      ],
+      "Projects": [
+        "Build Your First Website",
+        "Calculator App",
+        "To-Do List Application",
+        "Personal Portfolio",
+        "Simple Game Development"
+      ],
+      "Certifications": [
+        "CompTIA A+",
+        "Google IT Support Certificate",
+        "Microsoft Azure Fundamentals",
+        "AWS Cloud Practitioner",
+        "Introduction to Cybersecurity"
+      ]
+    },
+    "Intermediate": {
+      "Video Courses": [
+        "Advanced Python Programming",
+        "Responsive Web Design",
+        "RESTful API Development",
+        "Database Management",
+        "Version Control Systems"
+      ],
+      "Articles": [
+        "Software Architecture Patterns",
+        "Cloud Computing Concepts",
+        "Microservices Architecture",
+        "DevOps Fundamentals",
+        "Technology Trends 2026"
+      ],
+      "Projects": [
+        "E-commerce Platform",
+        "Social Media App",
+        "Blog Management System",
+        "Task Management Dashboard",
+        "Real-time Chat Application"
+      ],
+      "Certifications": [
+        "AWS Solutions Architect Associate",
+        "Microsoft Azure Administrator",
+        "Docker Certified Associate",
+        "HashiCorp Certified Terraform",
+        "Kubernetes Application Developer"
+      ]
+    },
+    "Advanced": {
+      "Video Courses": [
+        "System Design",
+        "Distributed Systems",
+        "Advanced Architecture Patterns",
+        "High-Performance Computing",
+        "Emerging Technologies"
+      ],
+      "Articles": [
+        "Quantum Computing Basics",
+        "Blockchain Technology Deep Dive",
+        "IoT Architecture",
+        "5G Networks",
+        "Advanced System Design Patterns"
+      ],
+      "Projects": [
+        "Distributed Computing System",
+        "Blockchain Implementation",
+        "Machine Learning Pipeline",
+        "IoT Network Solution",
+        "Advanced Cloud Infrastructure"
+      ],
+      "Certifications": [
+        "AWS Solutions Architect Professional",
+        "Kubernetes CKA",
+        "Advanced AWS Security",
+        "Certified Information Security Manager",
+        "Google Cloud Architect"
+      ]
+    }
+  },
+  "Programming": {
+    "Beginner": {
+      "Video Courses": [
+        "Python for Beginners",
+        "JavaScript Basics",
+        "Java Fundamentals",
+        "C++ Introduction",
+        "Programming Logic"
+      ],
+      "Articles": [
+        "Variables and Data Types",
+        "Control Flow Structures",
+        "Functions and Methods",
+        "Object-Oriented Basics",
+        "Error Handling"
+      ],
+      "Projects": [
+        "Number Guessing Game",
+        "Temperature Converter",
+        "Expense Tracker",
+        "Quiz Application",
+        "Hangman Game"
+      ],
+      "Certifications": [
+        "Python Programmer Certification",
+        "JavaScript Basics Certificate",
+        "Java Associate Developer",
+        "Oracle Certified Associate Java",
+        "Programming Fundamentals"
+      ]
+    },
+    "Intermediate": {
+      "Video Courses": [
+        "Data Structures & Algorithms",
+        "Object-Oriented Programming",
+        "Functional Programming",
+        "Design Patterns",
+        "Testing & Debugging"
+      ],
+      "Articles": [
+        "Design Patterns Guide",
+        "SOLID Principles",
+        "Clean Code Practices",
+        "Advanced OOP Concepts",
+        "Concurrency and Threading"
+      ],
+      "Projects": [
+        "Library Management System",
+        "Banking Application",
+        "Inventory Management",
+        "Student Grade System",
+        "Event Management Platform"
+      ],
+      "Certifications": [
+        "Python Professional Developer",
+        "Oracle Java Developer",
+        "Microsoft Certified Associate",
+        "Complete Web Developer",
+        "Advanced Programming Concepts"
+      ]
+    },
+    "Advanced": {
+      "Video Courses": [
+        "Advanced Algorithms",
+        "Compiler Design",
+        "Programming Language Theory",
+        "Advanced Concurrency",
+        "Code Optimization"
+      ],
+      "Articles": [
+        "Advanced Data Structures",
+        "Memory Management",
+        "Parallel Programming",
+        "Software Performance Optimization",
+        "Advanced Design Patterns"
+      ],
+      "Projects": [
+        "Custom Language Compiler",
+        "Advanced Game Engine",
+        "High-Performance Database",
+        "Distributed Computing Platform",
+        "Advanced Optimization Framework"
+      ],
+      "Certifications": [
+        "Distinguished Oracle Certification",
+        "Professional Python Developer",
+        "Advanced Algorithmic Expertise",
+        "C++ Expert Certification",
+        "Software Architecture Expert"
+      ]
+    }
+  },
+  "Artificial Intelligence": {
+    "Beginner": {
+      "Video Courses": [
+        "AI Fundamentals",
+        "Machine Learning Basics",
+        "Python for AI",
+        "Neural Networks Introduction",
+        "AI Applications"
+      ],
+      "Articles": [
+        "What is Artificial Intelligence?",
+        "Machine Learning Concepts",
+        "Types of Learning",
+        "AI Ethics",
+        "AI in Daily Life"
+      ],
+      "Projects": [
+        "Movie Recommendation Engine",
+        "Spam Email Classifier",
+        "Sentiment Analysis Tool",
+        "Iris Classification",
+        "Handwritten Digit Recognition"
+      ],
+      "Certifications": [
+        "Google AI Essentials",
+        "AI for Everyone",
+        "Introduction to Machine Learning",
+        "Deep Learning Basics",
+        "AI Fundamentals Certificate"
+      ]
+    },
+    "Intermediate": {
+      "Video Courses": [
+        "Deep Learning",
+        "NLP Techniques",
+        "Computer Vision",
+        "Reinforcement Learning",
+        "Feature Engineering"
+      ],
+      "Articles": [
+        "Convolutional Neural Networks",
+        "Recurrent Neural Networks",
+        "Transformer Models",
+        "Attention Mechanisms",
+        "Transfer Learning"
+      ],
+      "Projects": [
+        "Image Classification System",
+        "Chatbot Development",
+        "Text Generation Model",
+        "Object Detection Application",
+        "Time Series Forecasting"
+      ],
+      "Certifications": [
+        "TensorFlow Developer Certificate",
+        "PyTorch Fundamentals",
+        "AWS Machine Learning Specialty",
+        "Google Cloud ML Engineer",
+        "Azure Data Scientist Associate"
+      ]
+    },
+    "Advanced": {
+      "Video Courses": [
+        "Advanced Deep Learning",
+        "Generative AI",
+        "Large Language Models",
+        "AI Optimization",
+        "Advanced NLP"
+      ],
+      "Articles": [
+        "Attention is All You Need",
+        "Vision Transformers",
+        "Diffusion Models",
+        "Quantum Machine Learning",
+        "Advanced AI Ethics"
+      ],
+      "Projects": [
+        "Custom LLM Fine-tuning",
+        "Generative AI Application",
+        "Multimodal AI System",
+        "Advanced Computer Vision",
+        "Production ML Pipeline"
+      ],
+      "Certifications": [
+        "Expert AI Developer Certificate",
+        "Advanced Deep Learning Specialist",
+        "Generative AI Expert",
+        "MLOps Professional",
+        "AI Solutions Architect"
+      ]
+    }
+  },
+  "Data Science": {
+    "Beginner": {
+      "Video Courses": [
+        "Data Science Fundamentals",
+        "Python for Data Science",
+        "Data Analysis Basics",
+        "Visualization Introduction",
+        "Statistics for Data"
+      ],
+      "Articles": [
+        "Data Science Overview",
+        "Working with Pandas",
+        "NumPy Basics",
+        "Data Visualization Principles",
+        "Statistical Analysis"
+      ],
+      "Projects": [
+        "Exploratory Data Analysis",
+        "Data Cleaning Project",
+        "Sales Data Analysis",
+        "Weather Data Visualization",
+        "Customer Analytics"
+      ],
+      "Certifications": [
+        "Google Data Analytics Certificate",
+        "IBM Data Science Professional",
+        "Microsoft Data Fundamentals",
+        "Data Analysis Essentials",
+        "Python for Data Science"
+      ]
+    },
+    "Intermediate": {
+      "Video Courses": [
+        "Advanced Analytics",
+        "Statistical Modeling",
+        "Big Data Basics",
+        "SQL for Data Science",
+        "Data Pipeline Development"
+      ],
+      "Articles": [
+        "Advanced Statistical Methods",
+        "A/B Testing Guide",
+        "Regression Analysis",
+        "Clustering Techniques",
+        "Time Series Analysis"
+      ],
+      "Projects": [
+        "Predictive Analytics Model",
+        "Customer Segmentation",
+        "Sales Forecasting",
+        "Marketing Analytics",
+        "Risk Assessment Model"
+      ],
+      "Certifications": [
+        "Advanced Data Analytics",
+        "Data Engineering Fundamentals",
+        "SQL for Analytics",
+        "Tableau Desktop Specialist",
+        "AWS Certified Data Analytics"
+      ]
+    },
+    "Advanced": {
+      "Video Courses": [
+        "Advanced Machine Learning",
+        "Big Data Processing",
+        "Data Engineering",
+        "Cloud Data Solutions",
+        "Advanced Analytics"
+      ],
+      "Articles": [
+        "Advanced Feature Engineering",
+        "Data Architecture Patterns",
+        "Data Governance",
+        "Causal Inference",
+        "Advanced Big Data Systems"
+      ],
+      "Projects": [
+        "Enterprise Data Warehouse",
+        "Real-time Analytics Platform",
+        "Advanced ML Pipeline",
+        "Data Lake Implementation",
+        "Custom BI Dashboard"
+      ],
+      "Certifications": [
+        "Data Engineering Expert",
+        "Advanced Analytics Specialist",
+        "Cloud Data Architect",
+        "Big Data Expert Certification",
+        "Enterprise Data Science"
+      ]
+    }
+  },
+  "Cyber Security": {
+    "Beginner": {
+      "Video Courses": [
+        "Cybersecurity Fundamentals",
+        "Network Security Basics",
+        "Linux for Security",
+        "Cryptography Intro",
+        "Security Best Practices"
+      ],
+      "Articles": [
+        "Common Security Threats",
+        "Password Security",
+        "Phishing and Social Engineering",
+        "Firewall Basics",
+        "Security Protocols"
+      ],
+      "Projects": [
+        "Password Manager",
+        "Network Scanner",
+        "Security Audit Tool",
+        "Encryption Decoder",
+        "Vulnerability Assessment"
+      ],
+      "Certifications": [
+        "CompTIA Security+",
+        "EC-Council Certified Ethical Hacker",
+        "Google Cybersecurity Certificate",
+        "ISC2 Certified Associate",
+        "Cisco CCNA Security"
+      ]
+    },
+    "Intermediate": {
+      "Video Courses": [
+        "Penetration Testing",
+        "Incident Response",
+        "Cloud Security",
+        "Application Security",
+        "Threat Hunting"
+      ],
+      "Articles": [
+        "OWASP Top 10",
+        "Security Architecture",
+        "Advanced Cryptography",
+        "Security Compliance",
+        "Threat Analysis"
+      ],
+      "Projects": [
+        "Penetration Testing Report",
+        "Incident Response Plan",
+        "Security Infrastructure Design",
+        "Vulnerability Management System",
+        "Security Monitoring Tool"
+      ],
+      "Certifications": [
+        "Certified Ethical Hacker",
+        "CISSP Associate",
+        "Offensive Security Web Expert",
+        "GIAC Security Essentials",
+        "AWS Security Specialty"
+      ]
+    },
+    "Advanced": {
+      "Video Courses": [
+        "Advanced Penetration Testing",
+        "Red Team Operations",
+        "Threat Intelligence",
+        "Security Architecture Design",
+        "Advanced Incident Response"
+      ],
+      "Articles": [
+        "Zero Trust Architecture",
+        "Advanced Threat Hunting",
+        "Security AI/ML",
+        "Advanced Forensics",
+        "Quantum-Safe Cryptography"
+      ],
+      "Projects": [
+        "Enterprise Security Framework",
+        "Advanced Threat Detection",
+        "Security Operations Center",
+        "Forensic Investigation Tool",
+        "Advanced Red Team Exercise"
+      ],
+      "Certifications": [
+        "CISSP",
+        "GIAC Certified Penetration Tester",
+        "Offensive Security Certified Expert",
+        "Certified Information Security Manager",
+        "Advanced Security Architect"
+      ]
+    }
+  },
+  "Web Development": {
+    "Beginner": {
+      "Video Courses": [
+        "HTML & CSS Basics",
+        "JavaScript Fundamentals",
+        "Responsive Design",
+        "Web Layout Basics",
+        "Frontend Essentials"
+      ],
+      "Articles": [
+        "HTML5 Structure",
+        "CSS Styling Guide",
+        "JavaScript DOM Manipulation",
+        "Responsive Design Principles",
+        "Web Accessibility"
+      ],
+      "Projects": [
+        "Personal Portfolio Website",
+        "Restaurant Website",
+        "Blog Platform",
+        "Landing Page",
+        "Product Showcase Site"
+      ],
+      "Certifications": [
+        "Google Web Developer",
+        "Frontend Developer Certificate",
+        "HTML/CSS Specialist",
+        "JavaScript Basics",
+        "Web Development Fundamentals"
+      ]
+    },
+    "Intermediate": {
+      "Video Courses": [
+        "React Basics",
+        "Vue.js Fundamentals",
+        "API Integration",
+        "CSS Frameworks",
+        "Web Performance"
+      ],
+      "Articles": [
+        "React Components",
+        "State Management",
+        "RESTful APIs",
+        "Webpack Configuration",
+        "Performance Optimization"
+      ],
+      "Projects": [
+        "E-commerce Website",
+        "Weather App",
+        "Social Media Feed",
+        "Task Manager Application",
+        "Music Streaming Platform"
+      ],
+      "Certifications": [
+        "React Developer Certificate",
+        "Full Stack Web Developer",
+        "Vue.js Specialist",
+        "Web Developer Professional",
+        "MERN Stack Developer"
+      ]
+    },
+    "Advanced": {
+      "Video Courses": [
+        "Advanced React",
+        "Next.js Mastery",
+        "Progressive Web Apps",
+        "Web Optimization",
+        "Advanced JavaScript"
+      ],
+      "Articles": [
+        "Advanced React Patterns",
+        "Micro Frontends",
+        "Web Assembly",
+        "Advanced Performance",
+        "Advanced Security"
+      ],
+      "Projects": [
+        "Advanced SPA Application",
+        "Progressive Web App",
+        "Performance-Optimized Platform",
+        "Advanced Real-time Application",
+        "Web3 Frontend"
+      ],
+      "Certifications": [
+        "Advanced React Expert",
+        "Full Stack Expert",
+        "Web Architecture Expert",
+        "Advanced Frontend Specialist",
+        "JavaScript Architect"
+      ]
+    }
+  },
+  "Cloud Computing": {
+    "Beginner": {
+      "Video Courses": [
+        "Cloud Computing Fundamentals",
+        "AWS Basics",
+        "Azure Essentials",
+        "Cloud Architecture Intro",
+        "Cloud Services Overview"
+      ],
+      "Articles": [
+        "Cloud Computing Models",
+        "AWS Services Overview",
+        "Azure Services Guide",
+        "GCP Fundamentals",
+        "Cloud Security Basics"
+      ],
+      "Projects": [
+        "Deploy Website on AWS",
+        "Azure App Service",
+        "Cloud Storage Solution",
+        "Serverless Function",
+        "Basic CI/CD Pipeline"
+      ],
+      "Certifications": [
+        "AWS Cloud Practitioner",
+        "Azure Fundamentals",
+        "Google Cloud Essentials",
+        "Cloud Computing Basics",
+        "Introduction to Cloud"
+      ]
+    },
+    "Intermediate": {
+      "Video Courses": [
+        "AWS Solutions Architecture",
+        "Azure Administration",
+        "Kubernetes Basics",
+        "Container Orchestration",
+        "Cloud Networking"
+      ],
+      "Articles": [
+        "AWS Advanced Services",
+        "Azure Resource Management",
+        "Docker and Containers",
+        "Network Design",
+        "Database in Cloud"
+      ],
+      "Projects": [
+        "Multi-tier AWS Architecture",
+        "Azure Hybrid Cloud Setup",
+        "Kubernetes Deployment",
+        "Cloud Application",
+        "Auto-scaling Infrastructure"
+      ],
+      "Certifications": [
+        "AWS Solutions Architect Associate",
+        "Azure Administrator Associate",
+        "Kubernetes Application Developer",
+        "Docker Certified Associate",
+        "Cloud Professional"
+      ]
+    },
+    "Advanced": {
+      "Video Courses": [
+        "AWS Advanced Architecture",
+        "Azure Advanced Solutions",
+        "Kubernetes Administration",
+        "Advanced DevOps",
+        "Cloud Security Architecture"
+      ],
+      "Articles": [
+        "Advanced Cloud Architecture",
+        "Multi-cloud Strategy",
+        "Advanced Kubernetes",
+        "Infrastructure as Code",
+        "Advanced Cloud Security"
+      ],
+      "Projects": [
+        "Enterprise Cloud Architecture",
+        "Multi-cloud Platform",
+        "Advanced Kubernetes Setup",
+        "Complete DevOps Pipeline",
+        "Advanced Cloud Security"
+      ],
+      "Certifications": [
+        "AWS Solutions Architect Professional",
+        "Azure Solutions Architect Expert",
+        "Kubernetes CKA",
+        "Cloud Security Expert",
+        "Advanced Cloud Architect"
+      ]
+    }
+  },
+  "Mobile App Development": {
+    "Beginner": {
+      "Video Courses": [
+        "Mobile Development Basics",
+        "React Native Intro",
+        "Flutter Fundamentals",
+        "App Development Essentials",
+        "Mobile UI Basics"
+      ],
+      "Articles": [
+        "Mobile App Architecture",
+        "React Native Setup",
+        "Flutter Widgets",
+        "Mobile Design Principles",
+        "App Publishing"
+      ],
+      "Projects": [
+        "Simple To-Do App",
+        "Weather Application",
+        "Calculator App",
+        "Habit Tracker",
+        "Notes Application"
+      ],
+      "Certifications": [
+        "React Native Developer",
+        "Flutter Developer Certificate",
+        "Mobile App Developer",
+        "iOS Basics",
+        "Android Basics"
+      ]
+    },
+    "Intermediate": {
+      "Video Courses": [
+        "Advanced React Native",
+        "Advanced Flutter",
+        "Native iOS Development",
+        "Native Android Development",
+        "Mobile Performance"
+      ],
+      "Articles": [
+        "Mobile Architecture Patterns",
+        "State Management Mobile",
+        "Mobile APIs",
+        "Performance Optimization",
+        "Mobile Security"
+      ],
+      "Projects": [
+        "E-commerce Mobile App",
+        "Social Media App",
+        "Chat Application",
+        "Music Streaming App",
+        "Video Sharing Platform"
+      ],
+      "Certifications": [
+        "Advanced React Native Developer",
+        "iOS Developer Certificate",
+        "Android Developer Certificate",
+        "Mobile Professional",
+        "Cross-platform Developer"
+      ]
+    },
+    "Advanced": {
+      "Video Courses": [
+        "Advanced Native Development",
+        "Mobile DevOps",
+        "Advanced App Architecture",
+        "Wearable Development",
+        "Advanced Mobile Security"
+      ],
+      "Articles": [
+        "Advanced Performance Tuning",
+        "Mobile ML Integration",
+        "Biometric Integration",
+        "Advanced AR/VR",
+        "Enterprise Mobile Solutions"
+      ],
+      "Projects": [
+        "Enterprise Mobile Platform",
+        "Advanced AR Application",
+        "Wearable App Ecosystem",
+        "Advanced Real-time Mobile App",
+        "Mobile AI Application"
+      ],
+      "Certifications": [
+        "Advanced iOS Expert",
+        "Advanced Android Expert",
+        "Mobile Architecture Expert",
+        "Enterprise Mobile Architect",
+        "Mobile Development Expert"
+      ]
+    }
+  }
+}

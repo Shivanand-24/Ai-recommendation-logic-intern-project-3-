@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Recommendations - AI Recommendation System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>🤖 AI Recommendation System</h1>
+            </div>
+            <div class="nav-links">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/recommend" class="nav-link">Recommendations</a>
+            </div>
+            <button class="theme-toggle" id="themeToggle">🌙 Dark Mode</button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container result-container">
+        <section class="result-section">
+            <!-- Header with Score -->
+            <div class="result-header">
+                <h1>🎉 Your Personalized Recommendations</h1>
+                <div class="score-display">
+                    <div class="score-circle">
+                        <div class="score-value">{{ score }}%</div>
+                        <div class="score-label">Match Score</div>
+                    </div>
+                    <div class="personalized-message">
+                        <p>{{ personalized_message }}</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- User Preferences Summary -->
+            <div class="preferences-summary">
+                <h2>Your Preferences</h2>
+                <div class="preferences-grid">
+                    <div class="preference-card">
+                        <span class="pref-icon">📚</span>
+                        <h3>Category</h3>
+                        <p>{{ category }}</p>
+                    </div>
+                    <div class="preference-card">
+                        <span class="pref-icon">🎯</span>
+                        <h3>Experience Level</h3>
+                        <p>{{ experience }}</p>
+                    </div>
+                    <div class="preference-card">
+                        <span class="pref-icon">💡</span>
+                        <h3>Learning Style</h3>
+                        <p>{{ learning_style }}</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recommended Topics -->
+            <div class="recommendations-section">
+                <h2>Recommended Topics</h2>
+                <div class="recommendations-list">
+                    {% for rec in recommendations %}
+                    <div class="recommendation-item" style="animation-delay: {{ loop.index * 0.1 }}s">
+                        <div class="rec-icon">📌</div>
+                        <div class="rec-content">
+                            <h3>{{ rec }}</h3>
+                            <p>Learn {{ rec }} to advance your skills in {{ category }}</p>
+                        </div>
+                        <div class="rec-action">
+                            <span class="explore-btn">Explore →</span>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <!-- Learning Roadmap -->
+            <div class="roadmap-section">
+                <h2>Your Learning Roadmap</h2>
+                <p class="roadmap-subtitle">Progress from {{ experience }} to Expert level</p>
+                <div class="roadmap-timeline">
+                    {% for item in roadmap %}
+                    <div class="roadmap-step" style="animation-delay: {{ loop.index * 0.15 }}s">
+                        <div class="step-number">{{ loop.index }}</div>
+                        <div class="step-content">
+                            <h4>{{ item.topic }}</h4>
+                            <span class="step-level">{{ item.level }} Level</span>
+                        </div>
+                    </div>
+                    {% if not loop.last %}
+                    <div class="step-connector"></div>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+
+            <!-- Learning Resources Info -->
+            <div class="resources-section">
+                <h2>Learning Resources for: <strong>{{ learning_style }}</strong></h2>
+                <p>Based on your preferred learning style, we recommend focusing on {{ learning_style | lower }} to get the most out of your learning experience.</p>
+                
+                {% if learning_style == "Video Courses" %}
+                <div class="resource-info">
+                    <h4>Video Courses Benefits:</h4>
+                    <ul>
+                        <li>Visual learning with step-by-step demonstrations</li>
+                        <li>Pause, rewind, and review anytime</li>
+                        <li>Learn at your own pace</li>
+                        <li>Perfect for visual learners</li>
+                        <li>Great for complex topics</li>
+                    </ul>
+                </div>
+                {% elif learning_style == "Articles" %}
+                <div class="resource-info">
+                    <h4>Articles Benefits:</h4>
+                    <ul>
+                        <li>In-depth written explanations</li>
+                        <li>Easy to search and reference</li>
+                        <li>Good for building conceptual understanding</li>
+                        <li>Can be read offline</li>
+                        <li>Great for documentation</li>
+                    </ul>
+                </div>
+                {% elif learning_style == "Projects" %}
+                <div class="resource-info">
+                    <h4>Project-Based Learning Benefits:</h4>
+                    <ul>
+                        <li>Hands-on practical experience</li>
+                        <li>Build real-world projects</li>
+                        <li>Immediately applicable skills</li>
+                        <li>Create portfolio pieces</li>
+                        <li>Problem-solving in real scenarios</li>
+                    </ul>
+                </div>
+                {% elif learning_style == "Certifications" %}
+                <div class="resource-info">
+                    <h4>Certification Benefits:</h4>
+                    <ul>
+                        <li>Recognized credentials</li>
+                        <li>Career advancement opportunities</li>
+                        <li>Structured learning paths</li>
+                        <li>Professional recognition</li>
+                        <li>Competitive advantage in job market</li>
+                    </ul>
+                </div>
+                {% endif %}
+            </div>
+
+            <!-- Next Steps -->
+            <div class="next-steps">
+                <h2>Next Steps</h2>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-num">1</div>
+                        <h3>Review Recommendations</h3>
+                        <p>Study the recommended topics for your profile</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">2</div>
+                        <h3>Follow the Roadmap</h3>
+                        <p>Progress through levels in the suggested order</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">3</div>
+                        <h3>Build Projects</h3>
+                        <p>Apply your learning through practical projects</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">4</div>
+                        <h3>Earn Certificates</h3>
+                        <p>Get certified to validate your skills</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="action-buttons">
+                <button class="action-btn save-btn" onclick="saveRecommendations()">
+                    <span>💾</span> Save Recommendations
+                </button>
+                <button class="action-btn print-btn" onclick="window.print()">
+                    <span>🖨️</span> Print Recommendations
+                </button>
+                <a href="/recommend" class="action-btn restart-btn">
+                    <span>🔄</span> Get New Recommendations
+                </a>
+                <a href="/" class="action-btn home-btn">
+                    <span>🏠</span> Back to Home
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 AI Recommendation System. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script>
+        function saveRecommendations() {
+            const recommendations = {
+                category: '{{ category }}',
+                experience: '{{ experience }}',
+                learning_style: '{{ learning_style }}',
+                score: {{ score }},
+                topics: {{ recommendations | tojson }},
+                saved_at: new Date().toLocaleString()
+            };
+            
+            const dataStr = JSON.stringify(recommendations, null, 2);
+            const dataBlob = new Blob([dataStr], { type: 'application/json' });
+            const url = URL.createObjectURL(dataBlob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = `recommendations_${Date.now()}.json`;
+            link.click();
+            
+            alert('✅ Recommendations saved successfully!');
+        }
+    </script>
+</body>
+</html>

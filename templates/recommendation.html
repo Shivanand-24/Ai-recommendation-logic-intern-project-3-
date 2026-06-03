@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Recommendations - AI Recommendation System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>🤖 AI Recommendation System</h1>
+            </div>
+            <div class="nav-links">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/recommend" class="nav-link active">Recommendations</a>
+            </div>
+            <button class="theme-toggle" id="themeToggle">🌙 Dark Mode</button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container form-container">
+        <section class="form-section">
+            <h1>Your Preferences Matter</h1>
+            <p class="form-subtitle">Tell us about yourself to get personalized recommendations</p>
+
+            <!-- Error Message -->
+            {% if error %}
+            <div class="error-message">
+                <span class="error-icon">⚠️</span>
+                <span>{{ error }}</span>
+            </div>
+            {% endif %}
+
+            <!-- Recommendation Form -->
+            <form method="POST" action="/result" class="recommendation-form" id="recommendationForm">
+                <!-- Category Selection -->
+                <div class="form-group">
+                    <label for="category" class="form-label">
+                        <span class="label-icon">📚</span>
+                        Favorite Category
+                    </label>
+                    <select id="category" name="category" class="form-input" required>
+                        <option value="">Select a category...</option>
+                        {% for cat in categories %}
+                        <option value="{{ cat }}">{{ cat }}</option>
+                        {% endfor %}
+                    </select>
+                    <div class="category-preview" id="categoryPreview"></div>
+                </div>
+
+                <!-- Experience Level Selection -->
+                <div class="form-group">
+                    <label for="experience" class="form-label">
+                        <span class="label-icon">🎯</span>
+                        Experience Level
+                    </label>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="experience" value="Beginner" required>
+                            <span class="radio-label">
+                                <strong>Beginner</strong>
+                                <small>Just starting out</small>
+                            </span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="experience" value="Intermediate" required>
+                            <span class="radio-label">
+                                <strong>Intermediate</strong>
+                                <small>Some experience</small>
+                            </span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="experience" value="Advanced" required>
+                            <span class="radio-label">
+                                <strong>Advanced</strong>
+                                <small>Highly experienced</small>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Learning Style Selection -->
+                <div class="form-group">
+                    <label for="learning_style" class="form-label">
+                        <span class="label-icon">💡</span>
+                        Preferred Learning Style
+                    </label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-option">
+                            <input type="radio" name="learning_style" value="Video Courses" required>
+                            <span class="checkbox-label">
+                                <strong>Video Courses</strong>
+                                <small>Learn through video tutorials</small>
+                            </span>
+                        </label>
+                        <label class="checkbox-option">
+                            <input type="radio" name="learning_style" value="Articles" required>
+                            <span class="checkbox-label">
+                                <strong>Articles</strong>
+                                <small>Read detailed guides</small>
+                            </span>
+                        </label>
+                        <label class="checkbox-option">
+                            <input type="radio" name="learning_style" value="Projects" required>
+                            <span class="checkbox-label">
+                                <strong>Projects</strong>
+                                <small>Learn by building</small>
+                            </span>
+                        </label>
+                        <label class="checkbox-option">
+                            <input type="radio" name="learning_style" value="Certifications" required>
+                            <span class="checkbox-label">
+                                <strong>Certifications</strong>
+                                <small>Earn credentials</small>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-actions">
+                    <button type="submit" class="submit-button">
+                        <span>Get My Recommendations</span>
+                        <span class="button-icon">→</span>
+                    </button>
+                    <a href="/" class="back-link">← Back to Home</a>
+                </div>
+            </form>
+
+            <!-- Category Info Cards -->
+            <div class="category-info">
+                <h3>Explore Categories</h3>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <span class="info-emoji">💻</span>
+                        <h4>Technology</h4>
+                        <p>General tech concepts and fundamentals</p>
+                    </div>
+                    <div class="info-card">
+                        <span class="info-emoji">🐍</span>
+                        <h4>Programming</h4>
+                        <p>Code, algorithms, and software development</p>
+                    </div>
+                    <div class="info-card">
+                        <span class="info-emoji">🤖</span>
+                        <h4>Artificial Intelligence</h4>
+                        <p>ML, Deep Learning, and Neural Networks</p>
+                    </div>
+                    <div class="info-card">
+                        <span class="info-emoji">📊</span>
+                        <h4>Data Science</h4>
+                        <p>Data analysis and visualization</p>
+                    </div>
+                    <div class="info-card">
+                        <span class="info-emoji">🔐</span>
+                        <h4>Cyber Security</h4>
+                        <p>Security, hacking, and protection</p>
+                    </div>
+                    <div class="info-card">
+                        <span class="info-emoji">🌐</span>
+                        <h4>Web Development</h4>
+                        <p>Frontend, backend, and full-stack</p>
+                    </div>
+                    <div class="info-card">
+                        <span class="info-emoji">☁️</span>
+                        <h4>Cloud Computing</h4>
+                        <p>AWS, Azure, GCP, and DevOps</p>
+                    </div>
+                    <div class="info-card">
+                        <span class="info-emoji">📱</span>
+                        <h4>Mobile Apps</h4>
+                        <p>iOS, Android, and cross-platform</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 AI Recommendation System. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
